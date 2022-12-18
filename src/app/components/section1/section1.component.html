@@ -1,1 +1,39 @@
-<header></header>
+<section #section1 class="container mx-auto py-6 px-4 overflow-hidden">
+  <div class="flex items-center justify-between">
+    <div class="px-[6px] text-2xl text-white">I- 00</div>
+    <div class="px-[6px] text-2xl text-white">HI- 99999</div>
+    <div class="px-[6px] text-2xl text-white">Hex School</div>
+  </div>
+  <div>
+    <div class="px-10 py-28 xl:py-32 xl:px-0">
+      <img
+        class="mx-auto block"
+        src="assets/img/banner_LOGO1.png"
+        alt="banner logo"
+      />
+    </div>
+    <div class="flex flex-col items-center justify-center">
+        <div class=" md:text-4xl text-3xl mb-28">
+            <div class="flex items-center cursor-pointer" (mouseover)="loginMouseOver(true)"> 
+                <div class="mr-5">
+                    <img class="hammer opacity-0" [class]="{'opacity-100':isLogin}" src="assets/img/hammer.gif" alt="hammer">
+                </div>
+                <div class="text-white" [class]="{'text-my-primary':isLogin}">
+                    1  LOG IN
+                </div>
+            </div>
+            <div class="flex items-center cursor-pointer" (mouseover)="loginMouseOver(false)"> 
+                <div class="mr-5">
+                    <img class="hammer opacity-0" [class]="{'opacity-100':!isLogin}"  src="assets/img/hammer.gif" alt="hammer">
+                </div>
+                <div class="text-white" [class]="{'text-my-primary':!isLogin}">
+                    2 SIGN IN
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-center mb-80">
+      <p class="text-white text-4xl">Interactive And Responsive Web Design.</p>
+    </div>
+  </div>
+</section>
