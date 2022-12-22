@@ -13,7 +13,7 @@ export class Section1Component implements OnInit {
   ngOnInit(): void {}
 
   ngAfterViewInit() {
-    this.moveToTop();
+    // this.moveToTop();
   }
 
   loginMouseOver(val: boolean) {
