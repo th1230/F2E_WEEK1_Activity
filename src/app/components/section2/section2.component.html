@@ -1,52 +1,136 @@
 <section class="z-20 mx-auto">
   <ul class="flex w-full flex-wrap">
-    <li #landingArea1 class="box relative mb-52 bg-my-primary">
+    <li
+      #landingArea1
+      class="box relative mb-[216px] h-[545px] w-full bg-my-primary 2xl:h-[570px] 2xl:w-[980px]"
+    >
       <div class="relative">
-        <div #landingArea1_web class="inner-box flex items-center">
+        <div
+          #landingArea1_web
+          class="flex h-[545px] w-full items-center 2xl:h-[570px] 2xl:w-[980px]"
+        >
           <img class="mx-auto" src="assets/img/web.gif" alt="web" />
         </div>
-        <div #landingArea1_dialog class="dialog1 absolute">
-          <p class="dialog1-text text-4xl">I’m cool !</p>
+        <div
+          #landingArea1_dialog
+          class="absolute top-[-5%] right-[2%] h-[117px] w-[390px] bg-contain bg-center bg-no-repeat"
+          style="background-image: url(assets/img/dialog1.png)"
+        >
+          <p class="absolute top-[15%] left-[50%] translate-x-[-50%] text-4xl">
+            I’m cool !
+          </p>
         </div>
       </div>
-      <div class="ease-text absolute text-white">
-        <p class=" text-4xl ease-text-shadow" data-stroke="羨慕別人的酷酷網頁動畫...">羨慕別人的酷酷網頁動畫...</p>
+      <div
+        class="ease-text absolute top-[50%] right-[-15%] hidden translate-y-[-50%] text-white 2xl:block"
+      >
+        <p
+          class="ease-text-shadow text-4xl"
+          data-stroke="羨慕別人的酷酷網頁動畫..."
+        >
+          羨慕別人的酷酷網頁動畫...
+        </p>
+      </div>
+      <div
+        class="block flex h-[216px] w-full items-center justify-center 2xl:hidden"
+      >
+        <p
+          class="ease-text-shadow text-4xl text-white"
+          data-stroke="羨慕別人的酷酷網頁動畫..."
+        >
+          羨慕別人的酷酷網頁動畫...
+        </p>
       </div>
     </li>
-    <li #landingArea2 class="box relative ml-auto mb-52 bg-my-primary">
-      <div class="relative clip">
-        <div class="inner-box flex items-center">
-          <div #landingArea2_solder 
-          style="background-image: url(assets/img/solder.png);"
-          class="absolute bottom-0 right-[10%] w-[637px] h-[614px] bg-no-repeat "
-          alt="web">
-          </div>
+    <li
+      #landingArea2
+      class="relative ml-auto mb-[216px] h-[545px] w-full bg-my-primary 2xl:h-[570px] 2xl:w-[980px]"
+    >
+      <div class="clip relative">
+        <div
+          class="flex h-[545px] w-full items-end justify-center 2xl:h-[570px] 2xl:w-[980px] 2xl:justify-end"
+        >
+          <div
+            #landingArea2_solder
+            style="background-image: url(assets/img/solder.png)"
+            class="absolute h-[480px] w-[498px] bg-cover bg-no-repeat xl:h-[614px] xl:w-[637px]"
+            alt="web"
+          ></div>
         </div>
-        <div #landingArea2_dialog class="dialog2 absolute">
-          <p class="dialog2-text text-4xl">!@#$%...</p>
+        <div
+          #landingArea2_dialog
+          class="dialog2 absolute left-[3%] top-[5%] block h-[123px] w-[215px] bg-contain bg-center bg-no-repeat 2xl:top-[-5%] 2xl:left-[-5%] 2xl:h-[203px] 2xl:w-[362px]"
+          style="background-image: url(assets/img/dialog2.png)"
+        >
+          <p
+            class="absolute top-[45%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-2xl 2xl:text-4xl"
+          >
+            !@#$%...
+          </p>
         </div>
       </div>
-      <div class="ease-text-2 absolute text-white">
-        <p class=" text-4xl ease-text-shadow" data-stroke="滿足不了同事的許願...">滿足不了同事的許願...</p>
+      <div
+        class="ease-text-2 absolute bottom-[30%] left-[-20%] hidden translate-y-[-50%] text-white 2xl:block"
+      >
+        <p
+          class="ease-text-shadow text-4xl"
+          data-stroke="滿足不了同事的許願..."
+        >
+          滿足不了同事的許願...
+        </p>
+      </div>
+      <div
+        class="block flex h-[216px] w-full items-center justify-center 2xl:hidden"
+      >
+        <p
+          class="ease-text-shadow text-4xl text-white"
+          data-stroke="滿足不了同事的許願..."
+        >
+          滿足不了同事的許願...
+        </p>
       </div>
     </li>
-    <li #landingArea3 class="box relative mb-52 bg-my-primary">
-      <div class="relative clip">
-        <div class="inner-box flex items-center">
-          <img #landingArea3_tree
-            class="absolute bottom-0 right-[10%]"
+    <li
+      #landingArea3
+      class="box relative mb-[216px] h-[545px] w-full bg-my-primary 2xl:h-[570px] 2xl:w-[980px]"
+    >
+      <div class="clip relative">
+        <div
+          class="flex h-[545px] w-full items-center 2xl:h-[570px] 2xl:w-[980px]"
+        >
+          <img
+            #landingArea3_tree
+            class="absolute bottom-0 right-[10%] h-[521px] w-[555px] md:w-auto 2xl:h-auto"
             src="assets/img/tree2.png"
             alt="web"
           />
-          <img #landingArea3_tree_solder
+          <img
+            #landingArea3_tree_solder
             class="absolute bottom-0 left-[30%]"
             src="assets/img/tree2_solder.png"
             alt="web"
           />
         </div>
       </div>
-      <div class="ease-text-3 absolute text-white">
-        <p class=" text-4xl ease-text-shadow" data-stroke="動畫技能樹太雜無從下手...">動畫技能樹太雜無從下手...</p>
+      <div
+        class="ease-text-3 absolute bottom-[20%] right-[-20%] hidden translate-y-[-50%] text-white 2xl:block"
+      >
+        <p
+          class="ease-text-shadow text-4xl"
+          data-stroke="動畫技能樹太雜無從下手..."
+        >
+          動畫技能樹太雜無從下手...
+        </p>
+      </div>
+      <div
+        class="block flex h-[216px] w-full items-center justify-center 2xl:hidden"
+      >
+        <p
+          class="ease-text-shadow text-4xl text-white"
+          data-stroke="動畫技能樹太雜無從下手..."
+        >
+          動畫技能樹太雜無從下手...
+        </p>
       </div>
     </li>
   </ul>
