@@ -1,6 +1,9 @@
 <section class="z-20">
-  <ul #ul class="flex h-full flex-nowrap overflow-hidden">
-    <li class="relative h-screen w-full shrink-0 bg-my-primary">
+  <ul #ul class="relative flex h-full flex-nowrap overflow-hidden">
+    <li
+      #week
+      class="relative h-screen w-full shrink-0 overflow-hidden bg-my-primary"
+    >
       <div class="flex h-full w-1/2 items-center">
         <img src="/assets/img/week1.png" alt="week1" />
       </div>
@@ -11,11 +14,10 @@
         <h1 class="mb-12 text-7xl text-white">The F2E 活動網站設計</h1>
         <p class="mb-2 text-[42px] text-white">視差滾動</p>
         <p class="text-[42px] text-white">#版塊設計</p>
-        <div class="relative left-[-20px] mb-11">
-          <img src="assets/img/flag/F4.png" alt="flag4" />
-          <div class="w-[207px] h-[83px] bottom-0 left-0 absolute">
-            <img src="assets/img/car.gif" alt="tank">
-          </div>
+        <div class="mb-11 translate-x-[-20px] z-10">
+          <img #flag src="assets/img/flag/F4.png" alt="flag4" />
+        </div>
+        <div class="dash absolute w-[50vw] right-0 top-[80%]">
         </div>
         <button
           class="cursor-pointer bg-white px-3 py-2 text-4xl text-my-primary"
@@ -23,9 +25,11 @@
           查看關卡細節
         </button>
       </div>
-
     </li>
-    <li class="h-screen w-full shrink-0 bg-[#76B9D6]">
+    <li
+      #week
+      class="relative h-screen w-full shrink-0 overflow-hidden bg-[#76B9D6]"
+    >
       <div class="flex h-full w-1/2 items-center">
         <img src="/assets/img/week2.png" alt="week1" />
       </div>
@@ -36,11 +40,10 @@
         <h1 class="mb-12 text-7xl text-white">今晚，我想來點點簽</h1>
         <p class="mb-2 text-[42px] text-white">canvas</p>
         <p class="text-[42px] text-white">#凱鈿行動科技</p>
-        <div class="relative left-[-20px] mb-11">
-          <img src="assets/img/flag/F1.png" alt="flag4" />
-          <div class="w-[207px] h-[83px] bottom-0 left-0 absolute">
-            <img src="assets/img/car.gif" alt="tank">
-          </div>
+        <div class="mb-11 translate-x-[-20px] z-10">
+          <img #flag src="assets/img/flag/F1.png" alt="flag4" />
+        </div>
+        <div class="dash absolute w-[100vw] right-0 top-[80%]">
         </div>
         <button
           class="cursor-pointer bg-white px-3 py-2 text-4xl text-my-primary"
@@ -49,7 +52,10 @@
         </button>
       </div>
     </li>
-    <li class="h-screen w-full shrink-0 bg-[#215400]">
+    <li
+      #week
+      class="relative h-screen w-full shrink-0 overflow-hidden bg-[#215400]"
+    >
       <div class="flex h-full w-1/2 items-center">
         <img src="/assets/img/week3.png" alt="week1" />
       </div>
@@ -60,11 +66,10 @@
         <h1 class="mb-12 text-7xl text-white">Scrum 新手村</h1>
         <p class="mb-2 text-[42px] text-white">JS draggable</p>
         <p class="text-[42px] text-white">#鈦坦科技</p>
-        <div class="relative left-[-20px] mb-11">
-          <img src="assets/img/flag/F1.png" alt="flag4" />
-          <div class="w-[207px] h-[83px] bottom-0 left-0 absolute">
-            <img src="assets/img/car.gif" alt="tank">
-          </div>
+        <div class="mb-11 translate-x-[-20px]">
+          <img #flag src="assets/img/flag/F1.png" alt="flag4" />
+        </div>
+        <div class="dash absolute w-[50vw] left-0 top-[80%]">
         </div>
         <button
           class="cursor-pointer bg-white px-3 py-2 text-4xl text-my-primary"
@@ -73,5 +78,11 @@
         </button>
       </div>
     </li>
+    <div
+      #tank
+      class="tank absolute h-[83px] w-[207px] translate-x-[-50%]"
+    >
+      <img src="assets/img/car.gif" alt="tank" />
+    </div>
   </ul>
 </section>

@@ -1,0 +1,31 @@
+.dash{
+    border-top: 5px dashed rgba(255, 255, 255, 0.5);
+}
+
+.tank{
+    top:60%;
+    left:52%;
+}
+@media screen and (max-width:1920px) {
+    .tank{
+        top:70%;
+        left:52%;
+    }
+}
+@media screen and (max-width:1920px) and (min-height:1024px) {
+    .tank{
+        top:63%;
+        left:52%;
+    }
+}
+@media screen and (max-width:820px) {
+    .tank{
+        top:63%;
+        left:55%;
+    }
+}
+@media screen and (max-width:767px) {
+    .tank{
+        top:65%;
+    }
+}
