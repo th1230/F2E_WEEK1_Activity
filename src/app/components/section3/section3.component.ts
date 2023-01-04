@@ -37,38 +37,11 @@ export class Section3Component implements OnInit {
       scrollTrigger: {
         trigger: content,
         scrub: true,
-        start: `30% center`,
-        end: 'center center',
+        start: `start 60%`,
+        end: 'center 45%',
       },
     });
     mountainTimeline
-      .fromTo(
-        L1,
-        {
-          bottom: '-50%',
-        },
-        {
-          bottom: '0',
-        },
-      )
-      .fromTo(
-        L2,
-        {
-          bottom: '-30%',
-        },
-        {
-          bottom: '0%',
-        },
-      )
-      .fromTo(
-        L3,
-        {
-          bottom: '-10%',
-        },
-        {
-          bottom: '0%',
-        },
-      )
       .fromTo(
         headline,
         {
@@ -78,7 +51,7 @@ export class Section3Component implements OnInit {
         {
           top: '20%',
           scale: 1,
-        },
+        }
       )
       .fromTo(
         L4,
@@ -87,6 +60,33 @@ export class Section3Component implements OnInit {
         },
         {
           bottom: '0%',
+        }
+      )
+      .fromTo(
+        L3,
+        {
+          bottom: '-10%',
+        },
+        {
+          bottom: '0%',
+        }
+      )
+      .fromTo(
+        L2,
+        {
+          bottom: '-30%',
+        },
+        {
+          bottom: '0%',
+        }
+      )
+      .fromTo(
+        L1,
+        {
+          bottom: '-50%',
+        },
+        {
+          bottom: '0',
         }
       );
   }

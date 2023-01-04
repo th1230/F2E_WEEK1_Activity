@@ -1,7 +1,7 @@
 @for $i from 1 to 13 {
     .diamond#{$i}{
         position: absolute;
-        animation: move (random(4)+1)*1s random(2+$i)*0.2s infinite alternate-reverse;
+        animation: move (random(4)+1)*1s $i*0.3s infinite alternate-reverse;
         width: 161px;
         height: 119px;
         left: (random(100)-200)*1%;

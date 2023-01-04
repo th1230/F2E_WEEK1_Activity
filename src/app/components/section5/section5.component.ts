@@ -107,7 +107,7 @@ export class Section5Component implements OnInit {
               }
             },
             once:true,
-            markers: true,
+            // markers: true,
           },
         }
       );
