@@ -1,7 +1,18 @@
-<div *ngIf="showLoading" class="h-full w-full z-[60] fixed left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] bg-black">
-    <div class="flex flex-col items-center justify-center h-full">
+<div *ngIf="showLoading" class="h-full w-full z-[60] fixed left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] bg-black flex justify-center items-center">
+    <div #circle class="flex flex-col items-center justify-center w-[100vw] h-[100vw] overflow-hidden bg-my-primary">
         <div class="w-[400px] text-white text-4xl mb-8 h-14">
-            <p #loadText>Loading...</p>
+            <h1 class="text-6xl" #loadText>
+                <span>L</span>
+                <span>O</span>
+                <span>A</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
+            </h1>
         </div>
         <div class="car">
             <img src="assets/img/car.gif" alt="car">

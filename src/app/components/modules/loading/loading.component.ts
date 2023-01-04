@@ -8,7 +8,7 @@ import { TextPlugin } from 'gsap/TextPlugin';
   styleUrls: ['./loading.component.scss'],
 })
 export class LoadingComponent implements OnInit {
-  @ViewChild('loadText') loadText!: ElementRef;
+  @ViewChild('circle') circle!: ElementRef;
   showLoading: boolean = true;
 
   constructor() {}
@@ -18,24 +18,32 @@ export class LoadingComponent implements OnInit {
   }
 
   ngAfterViewInit() {
+    let circle = this.circle.nativeElement;
     let _this = this;
-    this.resetScrollBar();
-    setTimeout(() => {
-      this.showLoading = false;
-    }, 4000);
-    gsap.from(_this.loadText.nativeElement, {
-      duration: 2,
-      delay: 0.5,
-      text: '',
-      ease: 'none',
-      repeat: -1,
+    let tl = gsap.timeline();
+
+    tl.from(circle, {
+      width:0,
+      height:0,
+      duration:0.8,
+      borderRadius:"50%",
       onStart: () => {
         _this.resetScrollBar()
       },
-    });
+    }).to(circle,{
+      delay:3,
+      duration:0.8,
+      width:0,
+      height:0,
+      borderRadius:"50%",
+      onComplete(){
+        _this.showLoading = false;
+      }
+    })
   }
 
   resetScrollBar() {
     window.scrollTo(0, 0);
   }
+
 }

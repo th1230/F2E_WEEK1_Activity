@@ -1,4 +1,28 @@
-.car{
-    width: 164px;
-    height: 66px;
+.car {
+  width: 164px;
+  height: 66px;
+}
+
+h1{
+    @for $i from 0 to 10 {
+        & span:nth-child(#{$i+1}){
+            top:10px;
+            position: relative;
+            display: inline-block;
+            animation: bounce 0.3s #{$i*0.1s} ease infinite alternate;
+            color: #fff;
+            text-shadow: 0 1px 0 #ffb3a4, 0 2px 0 #ffb3a4, 0 3px 0 #ffb3a4, 0 4px 0 #ffb3a4,
+              0 5px 0 #ffb3a4, 0 6px 0 transparent, 0 7px 0 transparent,
+              0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+@keyframes bounce {
+  100% {
+    top: -10px;
+    text-shadow: 0 1px 0 #ffb3a4, 0 2px 0 #ffb3a4, 0 3px 0 #ffb3a4, 0 4px 0 #ffb3a4,
+      0 5px 0 #ffb3a4, 0 6px 0 #ffb3a4, 0 7px 0 #ffb3a4, 0 8px 0 #ffb3a4, 0 9px 0 #ffb3a4,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
 }
