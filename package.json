@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "deploy":"ng deploy --base-href=/F2E_WEEK1_Activity/",
     "test": "ng test"
   },
   "private": true,
@@ -18,6 +19,7 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "angular-cli-ghpages": "^1.0.5",
     "gsap": "^3.11.3",
     "rxjs": "~7.5.0",
     "tailwindcss": "^3.2.4",
