@@ -1,10 +1,10 @@
 # F2EWeek1Activity
 
 ## 使用框架與套件
-Angular
-TailwindCss
-Gsap
-Scss
+* Angular
+* TailwindCss
+* Gsap
+* Scss
 
 ## 
 實作連結
