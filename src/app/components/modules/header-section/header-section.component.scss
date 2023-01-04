@@ -1,9 +1,50 @@
 header {
-  .button {
+  .button1 {
+    position: relative;
+    &:hover::before{
+      content: "";
+      width: 17.5px;
+      height: 17.5px;
+      border-top:5px double #3c0c00;
+      border-left:5px double #3c0c00;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &:hover::after{
+      content: "";
+      width: 17.5px;
+      height: 17.5px;
+      border-bottom:5px double #3c0c00;
+      border-right:5px double #3c0c00;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .button2 {
     width: 104px;
     height: 35px;
-    &:hover{
-      box-shadow: 5px 5px 0px 0px #3c0c00 inset;
+    position: relative;
+    &:hover::before{
+      content: "";
+      width: 17.5px;
+      height: 17.5px;
+      border-top:5px solid #3c0c00;
+      border-left:5px solid #3c0c00;
+      position: absolute;
+      left: -5px;
+      top: -5px;
+    }
+    &:hover::after{
+      content: "";
+      width: 17.5px;
+      height: 17.5px;
+      border-bottom:5px solid #3c0c00;
+      border-right:5px solid #3c0c00;
+      position: absolute;
+      right: -5px;
+      bottom: -5px;
     }
   }
 }
